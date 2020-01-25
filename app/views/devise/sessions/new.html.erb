@@ -1,7 +1,7 @@
 <div class="main">
   <p class="sign" align="center">Log in</p>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name, class: 'form1')) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: 'form1') do |f| %>
   <div class="center" align="center">
 
       <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Username', class: 'un' %>
