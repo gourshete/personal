@@ -1,11 +1,13 @@
 class DashboardsController < ApplicationController
 
-  def index
-    data = User.all.select(:first_name, :last_name, :email)
-    render json: data
+  def index; end
+
+  def list
+    users = User.all.select(:first_name, :last_name, :email)
+    render json: users
   end
 
-  def hello
+  def hello; end
 
-  end
+  def login; end
 end
