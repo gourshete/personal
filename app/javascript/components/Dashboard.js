@@ -1,4 +1,8 @@
 import React from 'react';
+import DashboardHeader from './DashboardHeader';
+import DashboardTabName from './DashboardTabName'
+import Tab from './Tab';
+//import Tab from '../components/tab.js'
 
 export default class Dashboard extends React.Component {
   constructor(){
@@ -8,16 +12,9 @@ export default class Dashboard extends React.Component {
   render() {
     return(
         <div className='dashboard-main'>
-          <div className='dashboard-header'>
-            <div className='dashboard-header-text'>Dashboard</div>
-          </div>
-          <div className='dashboard'>
-            <div className='notes tab'>
-              <a href='#'>Notes</a>
-            </div>
-            <div className='keep tab'>Keep</div>
-            <div className='reminder tab'>Reminders</div>
-          </div>
+          <DashboardHeader/>
+          <DashboardTabName/>
+          <Tab/>
         </div>
     );
   }
