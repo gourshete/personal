@@ -7,10 +7,18 @@
   height: 140px;
 }
 
+.tab-body{
+  background-color: #999999;
+  margin-top: -700px;
+  margin-left: 192px;
+  height: 700px;
+}
+
 .dashboard-header-text{
   padding-left: 45%;
-  padding-top: 5%;
-  font-size: 25px;
+  padding-top: 3%;
+  font-size: 35px;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
 .dashboard{
@@ -18,10 +26,12 @@
   padding: 5% 5% 5% 5%;
   background-color: #2E2F30;
   width: 15%;
+  height: 700px;
 }
 
-.tab{
+.tab-name{
   padding: 5px 5px 5px 5px;
   font-size: 18px;
+  border: #999999;
   color: snow;
 }
