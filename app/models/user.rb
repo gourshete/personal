@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   private
   def user_registration_email
-    #setup mailer
+    UserRegistrationMailer.registration(self).deliver_now
   end
 
   def user_destroy_email
