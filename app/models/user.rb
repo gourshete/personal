@@ -11,6 +11,8 @@ class User < ApplicationRecord
   after_create :user_registration_email
   after_destroy :user_destroy_email
 
+  has_many :notes
+
   private
   def user_registration_email
     UserRegistrationMailer.registration(self).deliver_now

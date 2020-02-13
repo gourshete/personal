@@ -9,7 +9,7 @@ export default class DashboardTabName extends React.Component{
     return(
         <div className='dashboard'>
           <div className='notes tab-name'>
-            <a href='#'>Notes</a>
+            <a href='/notes/list'>Notes</a>
           </div>
           <div className='keep tab-name'>Keep</div>
           <div className='reminder tab-name'>Reminders</div>
