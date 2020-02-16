@@ -23,7 +23,7 @@ export default class Note extends React.Component{
             <DashboardHeader/>
             <DashboardTabName/>
             <div className='tab-body'>
-              <p className='note'>{this.props.notes[0].data}</p>
+`              <p className='note'>{this.props.notes[0].data}</p>
             </div>
           </div>
         </div>

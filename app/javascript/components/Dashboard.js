@@ -12,7 +12,7 @@ export default class Dashboard extends React.Component {
   render() {
     return(
         <div className='dashboard-main'>
-          <DashboardHeader/>
+          <DashboardHeader logged_in_user={this.props.logged_in_user}/>
           <DashboardTabName/>
           <Tab/>
         </div>
