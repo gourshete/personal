@@ -13,6 +13,10 @@ class User < ApplicationRecord
 
   has_many :notes
 
+  def send_notice
+    AdminEmailTemplateMailer.deliver_now
+  end
+
   private
   def user_registration_email
     UserRegistrationMailer.registration(self).deliver_now
