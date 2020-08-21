@@ -1,4 +1,4 @@
-<div class="main">
+<div class="signin-main">
 <h2 class="sign" align="center">Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -11,14 +11,19 @@
 
   <div class="field">
     <% if @minimum_password_length %>
-    <em align='center'>(<%= @minimum_password_length %> characters minimum)</em>
+    <em align='center' class="min-password">(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, class: 'un', autocomplete: "new-password", placeholder: 'password'  %>
   </div>
 
     <%= f.password_field :password_confirmation, class: 'un', autocomplete: "new-password", placeholder: 'password_confirmation' %>
 
+  <div class="bottom-links">
     <%= f.submit "Sign up", class: 'submit a'%>
+      <br>
+    <div class="extra-link">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
 <% end %>
 </div>
-<%= render "devise/shared/links" %>
